@@ -1,0 +1,15 @@
+{C:/Users/kanan/Desktop/Verilog/Mano Project/mano_core.v} {1 {vlog -work work -vopt -stats=none {C:/Users/kanan/Desktop/Verilog/Mano Project/mano_core.v}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module mano_core
+
+Top level modules:
+	mano_core
+
+} {} {}} {C:/Users/kanan/Desktop/Verilog/Mano Project/mano_core_tb.v} {1 {vlog -work work -vopt -stats=none {C:/Users/kanan/Desktop/Verilog/Mano Project/mano_core_tb.v}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module mano_core_tb
+
+Top level modules:
+	mano_core_tb
+
+} {} {}}

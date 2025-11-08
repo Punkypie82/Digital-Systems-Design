@@ -1,0 +1,32 @@
+    mem[0] = 16'h2010; // LDA 0x0010
+    mem[1] = 16'h1012; // ADD 0x0012
+    mem[2] = 16'h3013; // STA 0x0013
+    mem[3] = 16'h7200; // ~AC
+    mem[4] = 16'h7008; // SNA skip if neg
+    mem[5] = 16'h7800; // clear ac 
+    mem[6] = 16'h7100; // ~E
+    mem[7] = 16'h7080; // Circular right
+    mem[8] = 16'h7040; // Circular left
+    mem[9] = 16'h7020; // Inc AC
+    mem[10] = 16'h7400; // clear E
+    mem[11] = 16'h7002;// SZE
+    mem[12] = 16'h7800;  // clear ac
+    mem[13] = 16'h7020; // inc AC
+   
+
+   // ****** Memory inst Test bench *******
+    // mem[0] = 16'h2010;  // LDA 0x0010
+    // mem[1] = 16'h1011;  // ADD 0x0011
+    // mem[2] = 16'h3015; // STA to mem[21]
+    // mem[3] = 16'h4006; // Branch to 6
+    // mem[4] = 16'h2010;  // LDA 0x0010
+    // mem[5] = 16'h3016; // STA TO MEM[22]
+    // mem[6] = 16'h2010;  // LDA 0x00010 = 5
+    // mem[7] = 16'h8013; // AND 0013 = 3
+    // mem[8] = 16'h3017;  // STA mem[23] = 1
+
+
+     mem[16] = 16'h0009;  // Value at address 0x0010
+     mem[17] = 16'h000C;  // Value at address 0x0011
+     mem[18] = 16'hFFFD; // -3 Value at address 0x0012
+     mem[19] = 16'h0011; // address of mem [17] 0x0013
